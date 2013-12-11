@@ -8,6 +8,7 @@ window.SocialShareButton =
     title = encodeURIComponent($(el).parent().data('title') || '')
     img = encodeURIComponent($(el).parent().data("img") || '')
     url = encodeURIComponent($(el).parent().data("url") || '')
+    description = encodeURIComponent($(el).parent().data("description") || '')
     if url.length == 0
       url = encodeURIComponent(location.href)
     switch site
