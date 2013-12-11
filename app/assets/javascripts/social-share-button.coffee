@@ -40,7 +40,7 @@ window.SocialShareButton =
       when "plurk"
         SocialShareButton.openUrl("http://www.plurk.com/?status=#{title}: #{url}&qualifier=shares")
       when "vk"
-        SocialShareButton.openUrl("http://vk.com/share.php?url=#{url}&title=#{title}")
+        SocialShareButton.openUrl("http://vk.com/share.php?url=#{url}&title=#{title}&description=#{description}")
       when "tumblr"
         get_tumblr_extra = (param) ->
           cutom_data = $(el).attr("data-#{param}")
