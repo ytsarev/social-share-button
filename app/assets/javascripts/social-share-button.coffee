@@ -21,7 +21,7 @@ window.SocialShareButton =
       when "douban"
         SocialShareButton.openUrl("http://shuo.douban.com/!service/share?href=#{url}&name=#{title}&image=#{img}")
       when "facebook"
-        SocialShareButton.openUrl("http://www.facebook.com/sharer/sharer.php?s=100&p[url]=#{url}&p[title]=#{title}&p[summary]=#{description}")
+        SocialShareButton.openUrl("http://www.facebook.com/sharer/sharer.php?s=100&p[url]=#{url}&p[title]=#{title}&p[summary]=#{description}&[images][0]=#{img}")
       when "qq"
         SocialShareButton.openUrl("http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=#{url}&title=#{title}&pics=#{img}")
       when "tqq"
@@ -41,7 +41,7 @@ window.SocialShareButton =
       when "plurk"
         SocialShareButton.openUrl("http://www.plurk.com/?status=#{title}: #{url}&qualifier=shares")
       when "vk"
-        SocialShareButton.openUrl("http://vk.com/share.php?url=#{url}&title=#{title}&description=#{description}")
+        SocialShareButton.openUrl("http://vk.com/share.php?url=#{url}&title=#{title}&description=#{description}&image=#{img}")
       when "tumblr"
         get_tumblr_extra = (param) ->
           cutom_data = $(el).attr("data-#{param}")
